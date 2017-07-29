@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+font-family: 'Lato', 'Arial', sans-serif
+}
+
+header, section.info {
+    background-image: url("img/hero_bg_1.jpg");
+    height: 100vh;
+}
+
+header nav {
+    overflow: auto;
+    padding: 20px 40px;
+    color: white;
+}
+
+header nav.sticky {
+    position: fixed;
+    background-color: #cccccc;
+    z-index: 9999;
+    width: 100%;
+}
+
+header nav .menu-item {
+    display: inline-block;
+}
+
+header nav .menu-item.menu-list {
+    float: right;
+}
+
+header nav .menu-item.logo::after {
+    content: 'resto';
+    text-transform: uppercase;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+
+header nav ul,
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 90%;
+    cursor: pointer;
+}
+
+section .row {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+section .row h2{
+    font-weight: normal;
+    font-size: 180%;
+    text-transform: uppercase;
+}
+
+section .row h2::after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+section .row .h2-description {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 30px;
+    line-height: 170%;
+    margin-bottom: 30px;
+}
+
+.optin {
+    position: fixed;
+    bottom: 0;
+    z-index: 99999999;
+    width: 100%;
+    background-image: -webkit-linear-gradient(bottom left, #4ED8F7, #26AFEB 70%);
+    background-image: linear-gradient(to top right, #4ED8F7, #26AFEB 70%);
+    color: #F9FAFA;
+    padding: 25px 80px;
+    box-shadow: 0px -2px 30px 3px rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+.optin__text {
+    display: inline-block;
+    float: left;
+    font-size: 20px;
+    margin-top: 7px;
+}
